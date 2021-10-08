@@ -1,0 +1,30 @@
+.works {
+  padding-top: 0;
+}
+.work-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  position: relative;
+}
+.work-list__description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  padding: 27px 0;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--bg-overlay-1);
+}
