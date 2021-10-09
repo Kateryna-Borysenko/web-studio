@@ -1,6 +1,10 @@
 .header {
-  background-color: var(--white-color);
-  border-bottom: 1px solid var(--border-color);
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    background-color: var(--white-color);
+    border-bottom: 1px solid var(--border-color);
+  }
 }
 .header__box {
   display: flex;
@@ -9,13 +13,17 @@
 .logo {
   display: block;
   color: var(--black-color);
-  margin-right: 93px;
+  margin-right: 88px;
 
   font-family: var(--accent-font-family);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    font-size: 26px;
+  }
 }
 .logo__item {
   color: var(--accent-color);
@@ -69,16 +77,17 @@
     }
   }
 }
-
 .contact-list {
-  display: flex;
+  display: block;
+  margin: auto 0;
+  text-align: right;
   .link {
     display: flex;
     align-items: center;
     color: var(--primary-text-color);
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
 
@@ -92,10 +101,19 @@
     &:focus .contact__icon {
       fill: var(--accent-color);
     }
+    @media screen and (min-width: 1200px){
+      font-size: 14px;
+    }
   }
-  a {
+  &__item {
+    &:last-child {
+      margin-top: 10px;
+      padding-right: 16px;
+    }
+
+  }
+  .link {
     display: block;
-    padding: 32px 0;
   }
   .contact__icon {
     margin-right: 10px;
@@ -106,9 +124,16 @@
   .thumb {
     margin-right: 10px;
   }
-  .contact-list__item {
-    &:not(:last-child) {
-      margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    .contact-list__item {
+      margin-top: 0;
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+    .link {
+      padding: 32px 0;
     }
   }
 }
