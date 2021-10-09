@@ -38,20 +38,28 @@
             </li>
             <li class="site-nav__link">
               <a href="" class="site-nav__link-item">Контакты</a>
-            </li> 
+            </li>
           </ul>
         </nav>
         <ul class="contact-list header__contact-list">
           <li class="contact contact-list__item">
             <a href="mailto:info@devstudio.com" class="link">
-              <svg class="contact__icon contact__icon_email" width="14" height="10">
+              <svg
+                class="contact__icon contact__icon_email"
+                width="14"
+                height="10"
+              >
                 <use href="./images/icons.svg#mail"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="contact-list__item">
             <a href="tel:+380961111111" class="link">
-              <svg class="contact__icon contact__icon_phone" width="10" height="14">
+              <svg
+                class="contact__icon contact__icon_phone"
+                width="10"
+                height="14"
+              >
                 <use href="./images/icons.svg#phone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -370,7 +378,7 @@
         </div>
       </div>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="box footer__box">
           <div class="box__item">
@@ -387,14 +395,14 @@
                     >г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
-                <li class="list">
+                <li class="address-list__link">
                   <a
                     href="mailto:info@example.com"
                     class="link address-list__mail"
                     >info@example.com</a
                   >
                 </li>
-                <li class="list">
+                <li class="address-list__link">
                   <a href="tel:+380991111111" class="link address-list__phone"
                     >+38 099 111 11 11</a
                   >
@@ -433,29 +441,34 @@
               </li>
             </ul>
           </div>
-          <div class="footer-wrap">
+          <div class="footer-wrap box__item">
             <form class="subscription">
               <h3 class="footer-wrap__title">Подпишитесь на рассылку</h3>
-              <input
-                class="subscription__input"
-                type="email"
-                name="email"
-                id="subscription"
-                placeholder="E-mail"
-              />
-              <button class="button primary subscription__button" type="submit">
-                Подписаться
-                <span class="subscription__item">
-                  <svg class="icon subscription__icon" width="24" height="24">
-                    <use href="./images/icons.svg#send"></use>
-                  </svg>
-                </span>
-              </button>
+             
+                <input
+                  class="subscription__input"
+                  type="email"
+                  name="email"
+                  id="subscription"
+                  placeholder="E-mail"
+                />
+                <button
+                  class="button primary subscription__button"
+                  type="submit"
+                >
+                  Подписаться
+                  <span class="subscription__item">
+                    <svg class="icon subscription__icon" width="24" height="24">
+                      <use href="./images/icons.svg#send"></use>
+                    </svg>
+                  </span>
+                </button>
+              
             </form>
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal backdrop__modal">
@@ -508,9 +521,7 @@
           </div>
 
           <div class="form-field modal-form__form-field">
-            <label for="comment" class="form-field__label"
-              >Комментарий</label
-            >
+            <label for="comment" class="form-field__label">Комментарий</label>
             <textarea
               name="user-comment"
               id="comment"
@@ -521,7 +532,11 @@
           <label class="modal-agreement modal-form__modal-agreement">
             <input
               type="checkbox"
-              class="agreement-checkbox visually-hidden modal-agreement__agreement-checkbox"
+              class="
+                agreement-checkbox
+                visually-hidden
+                modal-agreement__agreement-checkbox
+              "
               name="policy"
               id="policy"
             />
@@ -535,10 +550,16 @@
               >Условия договора</a
             ></label
           >
-          <button class="button modal-form__btn" type="submit">Отправить</button>
+          <button class="button modal-form__btn" type="submit">
+            Отправить
+          </button>
         </form>
 
-        <button data-modal-close class="close-btn modal__close-btn" type="button">
+        <button
+          data-modal-close
+          class="close-btn modal__close-btn"
+          type="button"
+        >
           <span>
             <svg class="close-btn__icon" width="11" height="11">
               <use href="./images/icons.svg#closer-icon"></use>
