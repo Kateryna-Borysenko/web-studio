@@ -67,6 +67,20 @@
         </ul>
       </div>
     </header>
+    <!-- mobile-header start-->
+    <div class="mobile-header container">
+      <div class="logo-mobile mobile-header__logo-mobile">
+        <a class="logo link logo-mobile__logo" href=""
+          ><span class="logo__item">Web</span>Studio</a
+        >
+      </div>
+      <button type="button" class="mobile-btn mobile-header__mobile-btn">
+        <svg class="mobile-btn__icon" width="40" height="40">
+          <use href="./images/icons.svg#menu_40px_mobile"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- mobile-header end-->
     <main>
       <section class="hero">
         <div class="container">
@@ -444,26 +458,22 @@
           <div class="footer-wrap box__item">
             <form class="subscription">
               <h3 class="footer-wrap__title">Подпишитесь на рассылку</h3>
-             
-                <input
-                  class="subscription__input"
-                  type="email"
-                  name="email"
-                  id="subscription"
-                  placeholder="E-mail"
-                />
-                <button
-                  class="button primary subscription__button"
-                  type="submit"
-                >
-                  Подписаться
-                  <span class="subscription__item">
-                    <svg class="icon subscription__icon" width="24" height="24">
-                      <use href="./images/icons.svg#send"></use>
-                    </svg>
-                  </span>
-                </button>
-              
+
+              <input
+                class="subscription__input"
+                type="email"
+                name="email"
+                id="subscription"
+                placeholder="E-mail"
+              />
+              <button class="button primary subscription__button" type="submit">
+                Подписаться
+                <span class="subscription__item">
+                  <svg class="icon subscription__icon" width="24" height="24">
+                    <use href="./images/icons.svg#send"></use>
+                  </svg>
+                </span>
+              </button>
             </form>
           </div>
         </div>
@@ -568,6 +578,8 @@
         </button>
       </div>
     </div>
+
+    <!-- mobile-menu -->
     <script src="./js/modal.js"></script>
   </body>
 </html>

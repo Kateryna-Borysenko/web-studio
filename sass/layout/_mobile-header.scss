@@ -1,0 +1,29 @@
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  &__mobile-btn {
+    width: 55px;
+    height: 55px;
+    background-color: inherit;
+    border: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  .logo {
+    padding: 16px 0;
+    color: var(--black-color);
+    margin-right: 88px;
+
+    font-family: var(--accent-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    &__item {
+      color: var(--accent-color);
+    }
+  }
+}

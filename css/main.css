@@ -84,6 +84,47 @@ textarea {
   clip: rect(0 0 0 0);
 }
 
+.mobile-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-header__mobile-btn {
+  width: 55px;
+  height: 55px;
+  background-color: inherit;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+.mobile-header .logo {
+  padding: 16px 0;
+  color: var(--black-color);
+  margin-right: 88px;
+  font-family: var(--accent-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.mobile-header .logo__item {
+  color: var(--accent-color);
+}
+
 .header {
   display: none;
 }
