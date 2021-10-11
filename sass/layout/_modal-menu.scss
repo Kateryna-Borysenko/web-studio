@@ -1,4 +1,7 @@
 .modal-menu-container {
+//   display: flex;
+//  flex-direction: column;
+//  justify-content: space-between;
   position: fixed;
   padding: 48px 40px;
   letter-spacing: 0.02em;
@@ -6,6 +9,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  min-height :550px;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -45,6 +49,7 @@
     position: absolute;
     bottom: 48px;
     left: 40px;
+    
     font-weight: 500;
     .contact__link-mobile {
       display: block;
