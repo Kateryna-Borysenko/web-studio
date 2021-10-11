@@ -68,7 +68,9 @@
         <button
           data-menu-open-btn
           type="button"
-          class="mobile-btn header__mobile-btn"
+          class="mobile-btn header__mobile-btn is-hidden"
+          aria-expanded="false"
+          areia-controls="mobile-menu"
         >
           <svg class="mobile-btn__icon" width="40" height="40">
             <use href="./images/icons.svg#menu_40px_mobile"></use>
@@ -575,7 +577,7 @@
     </div>
 
     <!-- mobile-menu start -->
-    <!-- <div class="modal-menu-container">
+    <div class="modal-menu-container is-hidden" data-menu-backdrop>
       <button
         data-menu-close-btn
         class="modal-menu-btn modal-menu-container__modal-menu-btn"
@@ -585,9 +587,12 @@
         </svg>
       </button>
 
-      <div class="mobile-menu modal-menu-container__mobile-menu">
+      <div
+        class="mobile-menu modal-menu-container__mobile-menu js-menu-container"
+        id="mobile-menu"
+      >
         <nav class="nav-bar mobile-menu__nav-bar">
-          <ul is-hidden class="site-nav nav-bar__site-nav">
+          <ul class="site-nav nav-bar__site-nav mob-menu-list ">
             <li class="site-nav__link-item">
               <a href="" class="site-nav__link site-nav__link_current"
                 >Студия</a
@@ -630,8 +635,9 @@
           </ul>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- mobile-menu end -->
+
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
